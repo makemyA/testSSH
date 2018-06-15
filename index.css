@@ -1,0 +1,487 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+  /* A4 at 72dpi: 595 pixels x 842 pixels
+  A4 at 300dpi: 2480 pixels x 3508 pixels
+  A4 at 600dpi: 4960 pixels x 7016 pixels */
+
+   /* 	   Extra small	Small	Medium	Large
+   Class prefix	.col-xs	.col-sm	.col-md	.col-lg
+   Screen width	<576px	>=768px	>=992px	>=1200px */
+   @media screen and (max-width: 576px) {
+   
+    	.container-name {
+    	  		order:-1;
+    	  }
+
+		h1 {
+   	
+   	
+	font-size: 2em;
+		}
+		
+       h2 {
+	font-size: 0.8em;
+	
+
+}
+h3 {
+	
+	padding: 2.1em;
+}
+}
+	@media screen and (min-width: 576px) {
+   .container-name {
+    	  		order:0;
+    	  }
+
+		h1 {
+   	
+   	
+	font-size: 2em;
+		}
+		
+       h2 {
+	font-size: 0.8em;
+	
+
+}
+h3 {
+	
+	padding: 2.1em;
+}
+}
+	@media screen and (min-width: 768px){
+		.container-name {
+    	  		order:0;
+    	  }
+	h1 {
+	font-size: 3em;
+		}
+	h2 {
+	font-size: 1em;
+	}
+}
+	@media screen and (min-width: 992px){
+	h1 {
+	font-size: 4em;
+		}
+		h2{
+	font-size: 1.3em;	
+	}
+		
+	}
+	@media screen and (min-width: 1200px){
+	h1 {
+	font-size: 4em;
+		}
+	h2{
+	font-size: 1.3em;	
+	}
+	}
+   
+body {
+width: 90%;
+margin: 0 auto 0 auto;
+text-align: left;
+color:#24292E;
+  }
+h1 {
+	
+	font-weight: 350;
+	text-transform: uppercase;
+	margin-bottom:0.4em;
+}
+h2 {
+	/*font-size: 1.3em;*/
+	font-weight: 600;
+	border-left: 1.5px solid #24292E; 
+	border-bottom: 1.5px solid #24292E;
+	text-align: left;
+	padding: 0 0 0.5em 1em;
+	margin-bottom: 0.8em;
+	width: 80%;
+	border-radius: 2px;
+	line-height: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+h3 {
+	font-size: 0.9em;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	text-align: center;
+	flex:100%;
+	z-index: 90;
+	line-height: 1.5em;
+}
+h4 {
+	font-size: 0.8em;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	text-align: left;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+/* .profile, .education {
+	background-color: #F1F1F1;
+	border-radius: 5%;
+	padding-top: 1em;
+} */
+[class*=container] {
+	
+}
+.bg {
+padding-top: 1em;
+border-radius: 3%;
+}
+.bg.education {
+	background-color: #F1F1F1;
+}
+.bg.profile {
+	background-color: #F1F1F1;
+}
+/* [class*=name] {
+	align-self: center;
+} */
+/* .triangle {
+	float:left;
+	width:0;
+	height:0;
+	border-top:40px solid black;
+	border-right:40px solid transparent;
+
+} */
+.container-picture .picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+ #picture img {
+	width:60%;
+	min-width: 200px;
+	height: 60%;
+	border-radius: 50%;
+	text-align: center;
+}
+.picture img {
+	width:100%;
+	height:auto;
+	filter:grayscale(80%);
+}
+.picture img:hover {
+	filter:grayscale(0%);
+}
+.btn {
+	background-color: #24292E;
+	color: #F1F1F1; 
+}
+.box-title {
+	display: flex;
+	flex-wrap: wrap;	
+}
+.container-name {
+	background-color: #24292E;
+	color: #F1F1F1;
+	z-index:;
+}
+  .container-name::after {
+  	content:"";
+  	position: absolute;
+  	left: 0;
+  	bottom: 0;
+  	border-width: 50px 0 0 955px;
+  	border-style: solid;
+  	border-color: transparent transparent transparent white;
+  	z-index:5;
+ 
+ } 
+ .big-letter {
+	font-size: 3.2em;
+	font-weight: 400;
+	float:left;
+	line-height: 0.5em;
+	padding-top: 0.1em;
+	margin-right:0em;
+}
+
+
+small {
+	
+	color: ;
+	margin-left: 0em;
+	padding-left: 1.2em;
+
+	
+}
+p {
+  	font-size: 0.8em;
+  	color:#24292E;
+  }
+.link {
+  	text-decoration: none;
+  	color: black;
+}
+.link:hover {
+	color:#F1F1F1;
+	background-color: #24292E;
+	text-decoration: none;
+}
+.btn:hover {
+	color:#24292E;
+	background-color: #F1F1F1;
+}
+.fas, .fab {
+	font-size: 1.5em;
+	/*margin-right: 0.4em;*/
+	color:#24292E;
+	border-radius: 10%;
+	color: 1px solid transparent;
+
+}
+.fas.fa-home {
+	margin-right: 0.2em;
+	
+}
+.container-fluid_skills {
+
+}
+.container-skills {
+	min-width: 465px;
+}
+
+[class*=bloc] {
+	height: 1.6em;
+}
+.full {
+	background-color: #24292E;
+	border-left: 2px solid white ;
+	border-right: 2px solid white ;
+	border-top: 1px solid white ;
+	border-bottom: 1px solid white ;
+	
+	border-radius: 15%;
+}
+.bloc.empty {
+	background-color: #F1F1F1;
+	
+	border-left: 2px solid white ;
+	border-right: 2px solid white ;
+	border-top: 1px solid white ;
+	border-bottom: 1px solid white;
+	border-radius: 10%;
+
+	
+}
+.fa-file-excel {
+
+}
+[class*=col] {
+	margin-bottom: 0.1em;
+}
+/* div .bg.name {
+	display: flex;
+	padding-bottom: 2em;
+	width:100%;
+	height: 100%;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+div .bg.name {
+	margin-top:1em;
+	line-height: 1em;
+	flex:100%;
+}
+
+.work {
+	margin-top: 1.4em;
+	margin-bottom: 0;
+	padding-right: 2em;
+	padding-top: 1em;
+	align-self: flex-end;
+	width: 40%;
+	text-align: center;
+}
+[class*=work]{
+	justify-content: center;
+}
+
+
+div .bg.name::after {
+	content: "";
+  	position: absolute;
+  	left: 0em;
+  	bottom: 0;
+  	width: 0;
+  	height: 0;
+  	border-bottom: 7em solid black;
+  	shape-outside: content-box;
+  	border-left:  15em solid transparent;
+  	border-right:  15em solid transparent;
+  	z-index: -1;
+
+}
+.container-name {
+	display: flex;
+	
+	align-self: stretch;
+	
+	
+	padding:0;
+}
+[class*=bachelier] {
+	align-self: center;
+}
+.big-letter {
+	font-size: 3.2em;
+	font-weight: 400;
+	float:left;
+	line-height: 0.5em;
+	padding-top: 0.1em;
+	margin-right:0em;
+}
+.big-letter.master {
+	
+	margin-left: 1.5em;
+}
+.big-letter.bachelier {
+	
+	margin-left: 3.0em;
+}
+.big-letter.bac {
+	
+	margin-left: 4.5em;
+}
+.education p {
+	margin-left: 4.5em;
+	flex-wrap: nowrap;
+}
+color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+
+ small {
+	
+	color: ;
+	margin-left: 0em;
+	padding-left: 1.2em;
+
+	
+}
+p {
+  	font-size: 0.8em;
+  	color:black;
+  }
+.link {
+  	text-decoration: none;
+  	color: black;
+}
+.link:hover {
+	color:white;
+	background-color: black;
+	text-decoration: none;
+}
+.fas, .fab {
+	font-size: 1.5em;
+	margin-right: 0.4em;
+}
+.fas.fa-home {
+	margin-right: 0.2em;
+}
+.etterbeek {
+	margin-left: 2em;
+}
+
+
+.stage {
+	background-image: url("photos/cv.jpg");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+ 	width: 595px;
+	height: 842px; 
+	border:1px solid black;
+	margin: 0 auto 0 auto;
+	opacity: 0.6;
+}
+.container-fluid {
+	border:1px solid black;
+
+}
+
+[class*=container]{
+	
+	
+	border:1px solid blue;
+}
+
+ 
+.bg {
+	padding: 1em;
+	margin-top: 1em;
+	border:1px solid black;
+}
+
+div.col-8.container-name {
+	align-items: flex-end;
+	justify-content: flex-start;
+}
+.list-items {
+	font-style: none;
+	padding:0;
+	margin:0;
+}
+.item {
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 0.5em 0.5em 0.5em 0;
+}
+
+[class*=bloc] {
+	height: 1.6em;
+}
+.full {
+	background-color: black;
+	border-left: 3px solid white ;
+	border-right: 3px solid white ;
+	border-top: 1px solid white ;
+	border-bottom: 1px solid white ;
+	
+	border-radius: 10%;
+}
+.bloc.empty {
+	background-color: #F1F1F1;
+	
+	border-left: 3px solid white ;
+	border-right: 3px solid white ;
+	border-top: 1px solid white ;
+	border-bottom: 1px solid white;
+	border-radius: 10%;
+
+	
+}
+.fa-file-excel {
+
+}
+[class*=col] {
+	margin-bottom: 0.1em;
+} */
+/*#F1F1F1 gris banner gauche*/
